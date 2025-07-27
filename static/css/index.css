@@ -271,3 +271,66 @@ footer {
   border: none;
   border-radius: 12px;
 }
+.proyectos-relevantes {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 100px 60px;
+  min-height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+
+.video-fondo {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.contenido-texto {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  text-align: left;
+}
+
+.contenido-texto h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contenido-texto p {
+  text-align: justify;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.boton-transparente {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.boton-transparente:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
