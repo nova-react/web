@@ -19,8 +19,9 @@
     <li><a href="#carousel">Inicio</a></li>
     <li><a href="#servicios">Servicios</a></li>
     <li><a href="#proyectos">Proyectos</a></li>
-    <li><a href="#">Blog</a></li>
     <li><a href="#contacto">Contacto</a></li>
+    <li><a href="pages/gallery.html">Galería</a></li>
+    <li><a href="https://lrondan.wordpress.com/">Blog</a></li>
   </ul>
 
   <div class="nav-right">
@@ -86,26 +87,38 @@
         </div>
           <h3>Diseño de Reactores</h3>
           <p>Modelado, escalado y optimización de reactores químicos industriales.</p>
+        <div>
+          <a href="#servicios" class="btn-servicios">Ver Servicios</a>
+        </div>
       </div>
+
       <div class="tarjeta">
         <div class="tarjeta-img">
           <img src="media/cards/simul.jpg" alt="simulacion de procesos">
         </div>         
         <h3>Simulación de Procesos</h3>
         <p>Uso de software especializado para predicción y mejora de procesos.</p>
+        <div>
+          <a href="#servicios" class="btn-servicios">Ver Servicios</a>
+        </div>
       </div>
+
       <div class="tarjeta">
         <div class="tarjeta-img">
           <img src="media/cards/depos.webp" alt="Control y Seguridad">
         </div> 
         <h3>Control y Seguridad</h3>
         <p>Implementación de estrategias de control automático y mitigación de riesgos.</p>
+        <div>
+          <a href="#servicios" class="btn-servicios">Ver Servicios</a>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
 
-<section class="proyectos-relevantes">
+<section class="proyectos-relevantes" id="proyectos">
   <!-- Video de fondo -->
   <video autoplay muted loop playsinline class="video-fondo">
     <source src="media/cards/vid01.mp4" type="video/mp4">
@@ -121,20 +134,41 @@
     <p>
       Desde la destilación sostenible de aceites esenciales hasta sistemas de control PID en plantas piloto, NovaReact lleva la ingeniería química a otro nivel. Aplicamos ciencia, creatividad y tecnología para lograr soluciones con impacto industrial y ambiental.
     </p>
-    <a href="#ver-proyectos" class="boton-transparente">
+    <a href="pages/projects.html" class="boton-transparente">
       Ver más →
     </a>
   </div>
 </section>
 
+<!-- CONTACTO -->
+<section id="contacto" style="background: url('media/cards/contacto.webp') center/cover no-repeat; padding: 4rem 0; color: white;">
 
+  <div style="background-color: rgba(0,0,0,0.6); padding: 2rem; max-width: 800px; margin: auto; border-radius: 12px;">
+    <h2 style="text-align: center; font-size: 2rem; margin-bottom: 1rem;">Contáctanos</h2>
+    <p style="text-align: center; margin-bottom: 2rem;">¿Tienes un proyecto o una consulta? En NovaReact estamos listos para ayudarte.</p>
+    
+    <form action="mailto:lrondan1126@gmail.com" method="POST" enctype="text/plain" style="display: flex; flex-direction: column; gap: 1rem;">
+      <input type="text" name="nombre" placeholder="Tu nombre" required style="padding: 0.8rem; border-radius: 6px; border: none;">
+      <input type="email" name="correo" placeholder="Tu correo electrónico" required style="padding: 0.8rem; border-radius: 6px; border: none;">
+      <textarea name="mensaje" placeholder="Escribe tu mensaje..." rows="5" required style="padding: 0.8rem; border-radius: 6px; border: none;"></textarea>
+      <button type="submit" style="padding: 1rem; background-color: #00b894; color: white; font-weight: bold; border: none; border-radius: 6px;">Enviar Mensaje</button>
+    </form>
 
-<section class="section" id="contacto">
-    <div class="overlay"></div>
-    <div class="content">
-      <h1>Contáctanos</h1>
-      <p>¿Tienes una idea o proyecto? NovaReact puede ayudarte a hacerlo realidad.</p>
+    <div style="text-align: center; margin-top: 2rem;">
+      <p><strong>Email:</strong> lrondan1126@gmail.com</p>
+      <p><strong>Teléfono / WhatsApp:</strong> +597 818 0978</p>
+      <p><strong>Ubicación:</strong> Paramaribo, Surinam</p>
     </div>
+
+    <div style="text-align: center; margin-top: 1rem;">
+      <a href="#" target="_blank" style="margin: 0 0.5rem;">LinkedIn</a>
+      <a href="https://chat.whatsapp.com/BmvOkUNAIKYHWv2HMxLgx8" target="_blank" style="margin: 0 0.5rem;">WhatsApp</a>
+      <a href="https://t.me/novareact" target="_blank" style="margin: 0 0.5rem;">Telegram</a>
+    </div>
+  </div>
 </section>
+
+
+
 </body>
 </html>

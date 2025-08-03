@@ -1,0 +1,91 @@
+body {
+      margin: 0;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    section.video-gallery {
+      background:center/cover no-repeat;
+      padding: 4rem 2rem;
+      color: white;
+      position: relative;
+    }
+
+    .video-gallery::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .video-gallery h2 {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .video-gallery p.section-description {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+    }
+
+    .videos {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .video-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-top: 56.25%;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .video-title {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      margin-bottom: 0.3rem;
+      color: #00cec9;
+    }
+
+    .video-description {
+      font-size: 0.95rem;
+      color: #dfe6e9;
+    }
+
+    @media (max-width: 500px) {
+      .video-gallery h2 {
+        font-size: 2rem;
+      }
+      .video-description {
+        font-size: 0.9rem;
+      }
+    }
