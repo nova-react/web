@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Proyectos y servicios de NovaReact en diseño de reactores, simulación de procesos y control para ingeniería química en Paramaribo, Surinam">
+    <link rel="stylesheet" href="../static/css/projects.css">
+    <link rel="icon" type="image/png" href="../media/logo/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Proyectos y Servicios - NovaReact</title>
 </head>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <img src="../media/logo/logo_invert.png" alt="NovaReact Logo" class="logo">
+        <a href="#"><span class="brand">NovaReact</span></a>
+    </div>
+
+    <ul class="nav-menu">
+        <li><a href="../index.html#">Inicio</a></li>
+        <li><a href="../index.html#servicios">Servicios</a></li>
+        <li><a href="../index.html#proyectos">Proyectos</a></li>
+        <li><a href="../index.html#contacto">Contacto</a></li>
+        <li><a href="../pages/gallery.html">Galería</a></li>
+        <li><a href="https://lrondan.wordpress.com/">Blog</a></li>
+    </ul>
+
+    <div class="nav-right">
+        <a href="www.linkedin.com/in/novareact-inc-216542378"><img src="../media/icon/linkedin-svgrepo-com.svg" class="social-icon" alt="LinkedIn"></a>
+        <a href="https://t.me/novareact" ><img src="../media/icon/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" class="social-icon" alt="telegram"></a>
+        <a href="https://x.com/ArqMoments"><img src="../media/icon/twitter-social-media-communication-network-internet-connection-svgrepo-com.svg" class="social-icon" alt="twitter"></a>
+        <a href="https://chat.whatsapp.com/BmvOkUNAIKYHWv2HMxLgx8"><img src="../media/icon/whatsapp-communication-message-interaction-network-svgrepo-com.svg" class="social-icon" alt="Whatsapp"></a>
+        <a href="https://www.youtube.com/@Insalvaje"><img src="../media/icon/youtube-player-multimedia-video-communication-interaction-svgrepo-com.svg" class="social-icon" alt="youtube"></a>
+        <a href="mailto:lrondan1126@gmail.com"><img src="../media/icon/google-mail-message-letter-communication-interaction-svgrepo-com.svg" class="social-icon" alt="gmail"></a>
+    </div>
+</nav>
 <body>
-    
+    <section>
+        <h1 class="fade-in">Proyectos y Servicios</h1>
+        <p class="fade-in">En NovaReact, ofrecemos soluciones innovadoras en ingeniería química, desde el diseño de reactores hasta la simulación de procesos y control avanzado.</p>
+    </section>
+    <section>
+        <div class="project-item fade-in">
+            <img src="../media/cards/essentialoil.jpg" alt="Destilación Sostenible">
+            <div class="project-content">
+                <h2 class="text-xl font-semibold mb-4">Destilación Sostenible</h2>
+                <p>La destilación de aceites esenciales es un proceso crítico en la producción de extractos vegetales de alta calidad, utilizados en industrias como la aromaterapia, perfumería, cosmética y farmacéutica. Optimizar estos procesos, integrando principios de sostenibilidad, implica mejorar la eficiencia energética, reducir el impacto ambiental y garantizar la calidad del producto.</p>
+            </div>
+        </div>
+        <div class="project-item fade-in">
+            <img src="../media/cards/administracion-industrial.jpg" alt="Control PID">
+            <div class="project-content">
+                <h2 class="text-xl font-semibold mb-4">Control PID en Plantas Piloto</h2>
+                <p>El control PID es un mecanismo de control de lazo cerrado ampliamente utilizado en procesos industriales, incluidas las plantas piloto, para mantener una variable de proceso (por ejemplo, temperatura, caudal) en un valor deseado (setpoint) ajustando una variable de control (por ejemplo, potencia del calentador, velocidad de la bomba).</p>
+            </div>
+        </div>
+                <div class="project-item fade-in">
+            <img src="../media/cards/ri.webp" alt="Control PID">
+            <div class="project-content">
+                <h2 class="text-xl font-semibold mb-4">Diseño de Reactores Químicos</h2>
+                <p>El diseño de reactores químicos es un proceso multidisciplinario que combina principios de ingeniería química, termodinámica, kinetics, transferencia de masa y calor, y control de procesos para optimizar las reacciones quimicas. La integración de sistemas de control como el PID (Proporcional-Integral-Derivativo) permite un monitoreo y ajuste preciso de variables críticas, lo que es esencial en plantas piloto para pruebas y escalado.</p>
+            </div>
+        </div>
+        <div class="text-center mt-12">
+            <a href="./contact.html" class="btn">Colabora con Nosotros</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 NovaReact. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('mobile-menu').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
