@@ -1,0 +1,58 @@
+/* Estilos personalizados para la página de productos e-commerce */
+.product-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover {
+  transform: translateY(-3px);
+}
+
+.add-to-cart {
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+/* Ajustes para imágenes */
+.product-item img {
+  border-radius: 8px;
+}
+
+/* Espaciado y bordes */
+.product-item {
+  border-bottom-width: 2px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .product-item img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Estilos para la sección de contacto */
+.contact-section {
+  background-color: #1f2937; /* gray-800 */
+}
+
+.contact-section .max-w-lg {
+  max-width: 28rem; /* Ajustado para un formulario compacto */
+}
+
+@media (max-width: 768px) {
+  .contact-section .max-w-lg {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Estilos para el formulario */
+#contact-form input,
+#contact-form textarea {
+  transition: border-color 0.3s ease;
+}
+
+#contact-form button {
+  font-weight: bold;
+}

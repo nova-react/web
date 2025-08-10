@@ -6,6 +6,8 @@
   <title>NovaReact</title>
   <link rel="stylesheet" href="static/css/index.css">
   <script src="static/js/carousel.js" defer></script>
+  <script src="static/js/products.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <link rel="icon" type="image/png" href="media/logo/logo.png">
 </head>
 
@@ -19,8 +21,9 @@
     <li><a href="#carousel">Inicio</a></li>
     <li><a href="#servicios">Servicios</a></li>
     <li><a href="#proyectos">Proyectos</a></li>
-    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="pages/products.html">Productos</a></li>
     <li><a href="pages/gallery.html">Galería</a></li>
+    <li><a href="#contacto">Contacto</a></li>
     <li><a href="https://lrondan.wordpress.com/">Blog</a></li>
   </ul>
 
@@ -70,12 +73,17 @@
 <section id="servicios" class="servicios-section" style="background-image: url('media/cards/servicios-backgnd.jpeg');">
   <div class="servicios-overlay"></div>
 
-  <div class="youtube-esquina-izq">
-  <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/wTlof6LGLTo?si=cQsEVICnZFB7SpXD" title="YouTube video player" 
-  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-  allowfullscreen></iframe>
-  </div>
+    <div class="youtube-esquina-izq">
+      <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/wTlof6LGLTo?si=cQsEVICnZFB7SpXD" title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen></iframe>
+    </div>
+  <!-- Video de fondo -->
+  <video autoplay muted loop playsinline class="video-fondo">
+    <source src="media/cards/vid01.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+  </video>
 
   <div class="servicios-container">
     <h2>Nuestros Servicios</h2>
@@ -121,7 +129,7 @@
 <section class="proyectos-relevantes" id="proyectos">
   <!-- Video de fondo -->
   <video autoplay muted loop playsinline class="video-fondo">
-    <source src="media/cards/vid01.mp4" type="video/mp4">
+    <source src="media/cards/vid02.mp4" type="video/mp4">
     Tu navegador no soporta video HTML5.
   </video>
 
@@ -140,39 +148,44 @@
   </div>
 </section>
 
-<!-- CONTACTO -->
-<section id="contacto" style="background: url('media/cards/contacto.webp') center/cover no-repeat; padding: 4rem 0; color: white;">
-
-  <div style="background-color: rgba(0,0,0,0.6); padding: 2rem; max-width: 800px; margin: auto; border-radius: 12px;">
-    <h2 style="text-align: center; font-size: 2rem; margin-bottom: 1rem;">Contáctanos</h2>
-    <p style="text-align: center; margin-bottom: 2rem;">¿Tienes un proyecto o una consulta? En NovaReact estamos listos para ayudarte.</p>
-    
-    <form action="mailto:lrondan1126@gmail.com" method="POST" enctype="text/plain" style="display: flex; flex-direction: column; gap: 1rem;">
-      <input type="text" name="nombre" placeholder="Tu nombre" required style="padding: 0.8rem; border-radius: 6px; border: none;">
-      <input type="email" name="correo" placeholder="Tu correo electrónico" required style="padding: 0.8rem; border-radius: 6px; border: none;">
-      <textarea name="mensaje" placeholder="Escribe tu mensaje..." rows="5" required style="padding: 0.8rem; border-radius: 6px; border: none;"></textarea>
-      <button type="submit" style="padding: 1rem; background-color: #00b894; color: white; font-weight: bold; border: none; border-radius: 6px;">Enviar Mensaje</button>
-    </form>
-
-    <div style="text-align: center; margin-top: 2rem;">
-      <p><strong>Email:</strong> lrondan1126@gmail.com</p>
-      <p><strong>Teléfono / WhatsApp:</strong> +597 818 0978</p>
-      <p><strong>Ubicación:</strong> Paramaribo, Surinam</p>
+    <!-- Sección de Contacto -->
+<section class="bg-gray-800 text-white py-12" style="background-color: black;">
+    <div class="container mx-auto px-4">
+      <div class="max-w-lg ml-auto">
+        <h2 class="text-3xl font-semibold mb-6">Contáctanos</h2>
+        <p class="mb-4">¿Interesado en nuestros productos o servicios? Completa el formulario a continuación o contáctanos directamente para más información.</p>
+        <div class="mb-6">
+          <p><strong>Email:</strong> <a href="mailto:lrondan1126@gmail.com" class="underline hover:text-blue-300">lrondan1126@gmail.com</a></p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/+5978180978" class="underline hover:text-blue-300">+597 818 0978</a></p>
+        </div>
+        <form id="contact-form" action="mailto:lrondan1126@gmail.com" method="post" enctype="text/plain">
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-medium mb-1">Nombre</label>
+            <input type="text" id="name" name="name" class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-500" required>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium mb-1">Correo Electrónico</label>
+            <input type="email" id="email" name="email" class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-500" required>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-medium mb-1">Mensaje</label>
+            <textarea id="message" name="message" rows="4" class="w-full p-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-blue-500" required></textarea>
+          </div>
+          <button type="submit" class="w-full bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition-colors">Enviar Mensaje</button>
+        </form>
+      </div>
     </div>
-
-    <div style="text-align: center; margin-top: 1rem;">
-      <a href="#" target="_blank" style="margin: 0 0.5rem;">LinkedIn</a>
-      <a href="https://chat.whatsapp.com/BmvOkUNAIKYHWv2HMxLgx8" target="_blank" style="margin: 0 0.5rem;">WhatsApp</a>
-      <a href="https://t.me/novareact" target="_blank" style="margin: 0 0.5rem;">Telegram</a>
-    </div>
-  </div>
 </section>
 
-<footer>
-    <div class="container">
-      <p>&copy; 2025 NovaReact. Todos los derechos reservados.</p>
-    </div>
-</footer>
+  <!-- Pie de Página -->
+  <footer class="bg-black-800 text-white p-6 text-center">
+    <p>© 2025 NovaReact. Todos los derechos reservados.</p>
+    <p>Contáctanos: <a href="mailto:lrondan1126@gmail.com" class="underline">lrondan1126@gmail.com</a> | WhatsApp: <a href="https://wa.me/+5978180978" class="underline">+597 818 0978</a></p>
+    <p>
+      <a href="https://www.youtube.com/@Insalvaje" target="_blank" class="underline">Canal de YouTube</a> | 
+      <a href="www.linkedin.com/in/novareact-inc-216542378" target="_blank" class="underline ml-2">LinkedIn</a>
+    </p>
+  </footer>
 
 </body>
 </html>
