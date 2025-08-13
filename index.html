@@ -1,155 +1,121 @@
 <!DOCTYPE html>
 <html lang="es-en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NovaReact</title>
   <link rel="stylesheet" href="static/css/index.css">
-  <script src="static/js/carousel.js" defer></script>
-  <script src="static/js/products.js" defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="media/logo/logo.png">
+  <style>
+    /* Ensure Ubuntu is the only font used across all elements */
+    * {
+      font-family: 'Ubuntu', sans-serif !important;
+    }
+  </style>
 </head>
-
-<nav class="navbar">
-  <div class="nav-left">
-    <img src="media/logo/logo_invert.png" alt="NovaReact Logo" class="logo">
-    <a href="#"><span class="brand">NovaReact</span></a>
-  </div>
-
-  <ul class="nav-menu">
-    <li><a href="#carousel">Inicio</a></li>
-    <li><a href="#servicios">Servicios</a></li>
-    <li><a href="#proyectos">Proyectos</a></li>
-    <li><a href="pages/products.html">Productos</a></li>
-    <li><a href="pages/gallery.html">Galería</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-    <li><a href="https://lrondan.wordpress.com/">Blog</a></li>
-  </ul>
-
-  <div class="nav-right">
-    <a href="www.linkedin.com/in/novareact-inc-216542378"><img src="media/icon/linkedin-svgrepo-com.svg" class="social-icon" alt="LinkedIn"></a>
-    <a href="https://t.me/novareact" ><img src="media/icon/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" class="social-icon" alt="telegram"></a>
-    <a href="https://x.com/ArqMoments"><img src="media/icon/twitter-social-media-communication-network-internet-connection-svgrepo-com.svg" class="social-icon" alt="twitter"></a>
-    <a href="https://chat.whatsapp.com/BmvOkUNAIKYHWv2HMxLgx8"><img src="media/icon/whatsapp-communication-message-interaction-network-svgrepo-com.svg" class="social-icon" alt="Whatsapp"></a>
-    <a href="https://www.youtube.com/@Insalvaje"><img src="media/icon/youtube-player-multimedia-video-communication-interaction-svgrepo-com.svg" class="social-icon" alt="youtube"></a>
-    <a href="mailto:lrondan1126@gmail.com"><img src="media/icon/google-mail-message-letter-communication-interaction-svgrepo-com.svg" class="social-icon" alt="gmail"></a>
-  </div>
-</nav>
-
 <body>
-  <!-- Carrusel -->
-  <div id="carousel" class="carousel">
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="media/logo/logo_invert.png" alt="NovaReact Logo" class="logo">
+      <span class="brand">NovaReact</span>
+    </div>
+    <button class="hamburger">☰</button>
+    <ul class="nav-menu">
+        <li><a href="#carousel">Inicio</a></li>
+        <li><a href="pages/projects.html">Proyectos y Servicios</a></li>
+        <li><a href="pages/products.html">Productos</a></li>
+        <li><a href="pages/gallery.html">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="https://lrondan.wordpress.com/">Blog</a></li>
+    </ul>
+    <div class="nav-right">
+        <a href="www.linkedin.com/in/novareact-inc-216542378"><img src="media/icon/linkedin-svgrepo-com.svg" class="social-icon" alt="LinkedIn"></a>
+        <a href="https://t.me/novareact" ><img src="media/icon/telegram-communication-chat-interaction-network-connection-svgrepo-com.svg" class="social-icon" alt="telegram"></a>
+        <a href="https://x.com/ArqMoments"><img src="media/icon/twitter-social-media-communication-network-internet-connection-svgrepo-com.svg" class="social-icon" alt="twitter"></a>
+        <a href="https://chat.whatsapp.com/BmvOkUNAIKYHWv2HMxLgx8"><img src="media/icon/whatsapp-communication-message-interaction-network-svgrepo-com.svg" class="social-icon" alt="Whatsapp"></a>
+        <a href="https://www.youtube.com/@Insalvaje"><img src="media/icon/youtube-player-multimedia-video-communication-interaction-svgrepo-com.svg" class="social-icon" alt="youtube"></a>
+        <a href="mailto:lrondan1126@gmail.com"><img src="media/icon/google-mail-message-letter-communication-interaction-svgrepo-com.svg" class="social-icon" alt="gmail"></a>
+    </div>
+  </nav>
+
+  <div class="carousel">
     <div class="slide active" style="background-image: url('media/carousel/imagen1.webp');">
       <div class="overlay"></div>
-      <div class="content">
-        <div class="text-highlight">
-            <h1>Innovación en Ingeniería Química</h1>
-            <p>Asesoría técnica con enfoque sostenible, desde el laboratorio hasta la industria.</p>
-        </div>  
-    </div>
+      <div class="content text-highlight">
+        <h1>Innovación en Ingeniería Química</h1>
+        <p>Asesoría técnica con enfoque sostenible, desde el laboratorio hasta la industria.</p>
+      </div>
     </div>
     <div class="slide" style="background-image: url('media/carousel/imagen2.png');">
       <div class="overlay"></div>
-      <div class="content">
-        <div class="text-highlight">
-            <h1>Excelencia Técnica</h1>
-            <p>Procesos inteligentes, sostenibles y eficaces.</p>
-        </div>
+      <div class="content text-highlight">
+        <h1>Excelencia Técnica</h1>
+        <p>Procesos inteligentes, sostenibles y eficaces.</p>
       </div>
     </div>
     <div class="slide" style="background-image: url('media/carousel/imagen3.webp');">
       <div class="overlay"></div>
-      <div class="content">
-        <div class="text-highlight">
-            <h1>Impacto Real</h1>
-            <p>Proyectos con valor añadido en la industria química.</p>
-        </div>
+      <div class="content text-highlight">
+        <h1>Impacto Real</h1>
+        <p>Proyectos con valor añadido en la industria química.</p>
       </div>
     </div>
   </div>
 
-  <!-- Contenido de servicios -->
-<section id="servicios" class="servicios-section" style="background-image: url('media/cards/servicios-backgnd.jpeg');">
-  <div class="servicios-overlay"></div>
-
-    <div class="youtube-esquina-izq">
-      <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/wTlof6LGLTo?si=cQsEVICnZFB7SpXD" title="YouTube video player" 
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-      allowfullscreen></iframe>
-    </div>
-  <!-- Video de fondo -->
-  <video autoplay muted loop playsinline class="video-fondo">
-    <source src="media/cards/vid01.mp4" type="video/mp4">
-    Tu navegador no soporta video HTML5.
-  </video>
-
-  <div class="servicios-container">
-    <h2>Nuestros Servicios</h2>
-
-    <div class="tarjetas">
-      <div class="tarjeta">
-        <div class="tarjeta-img">
-          <img src="media/cards/reactor.jpg" alt="Diseño de Reactores">
-        </div>
+  <section id="servicios" class="servicios-section">
+      <!-- Video de fondo -->
+    <video autoplay muted loop playsinline class="video-fondo">
+        <source src="media/cards/vid01.mp4" type="video/mp4">
+        Tu navegador no soporta video HTML5.
+    </video>
+    <div class="servicios-overlay"></div>
+    <div class="servicios-container">
+      <h2>Nuestros Servicios</h2>
+      <div class="tarjetas">
+        <div class="tarjeta">
+          <div class="tarjeta-img">
+            <img src="media/cards/reactor.jpg" alt="Diseño de Reactores">
+          </div>
           <h3>Diseño de Reactores</h3>
           <p>Modelado, escalado y optimización de reactores químicos industriales.</p>
-        <div>
+          <a href="#servicios" class="btn-servicios">Ver Servicios</a>
+        </div>
+        <div class="tarjeta">
+          <div class="tarjeta-img">
+            <img src="media/cards/simul.jpg" alt="Simulación de Procesos">
+          </div>
+          <h3>Simulación de Procesos</h3>
+          <p>Uso de software especializado para predicción y mejora de procesos.</p>
+          <a href="#servicios" class="btn-servicios">Ver Servicios</a>
+        </div>
+        <div class="tarjeta">
+          <div class="tarjeta-img">
+            <img src="media/cards/depos.webp" alt="Control y Seguridad">
+          </div>
+          <h3>Control y Seguridad</h3>
+          <p>Implementación de estrategias de control automático y mitigación de riesgos.</p>
           <a href="#servicios" class="btn-servicios">Ver Servicios</a>
         </div>
       </div>
-
-      <div class="tarjeta">
-        <div class="tarjeta-img">
-          <img src="media/cards/simul.jpg" alt="simulacion de procesos">
-        </div>         
-        <h3>Simulación de Procesos</h3>
-        <p>Uso de software especializado para predicción y mejora de procesos.</p>
-        <div>
-          <a href="#servicios" class="btn-servicios">Ver Servicios</a>
-        </div>
-      </div>
-
-      <div class="tarjeta">
-        <div class="tarjeta-img">
-          <img src="media/cards/depos.webp" alt="Control y Seguridad">
-        </div> 
-        <h3>Control y Seguridad</h3>
-        <p>Implementación de estrategias de control automático y mitigación de riesgos.</p>
-        <div>
-          <a href="#servicios" class="btn-servicios">Ver Servicios</a>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="proyectos-relevantes" id="proyectos">
-  <!-- Video de fondo -->
-  <video autoplay muted loop playsinline class="video-fondo">
-    <source src="media/cards/vid02.mp4" type="video/mp4">
-    Tu navegador no soporta video HTML5.
-  </video>
+  <section id="proyectos" class="proyectos-relevantes">
+    <video class="video-fondo" autoplay muted loop>
+      <source src="media/cards/vid02.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5.
+    </video>
+    <div class="overlay"></div>
+    <div class="contenido-texto">
+      <h1>Proyectos Relevantes</h1>
+      <p>Desde la destilación sostenible de aceites esenciales hasta sistemas de control PID en plantas piloto, NovaReact lleva la ingeniería química a otro nivel. Aplicamos ciencia, creatividad y tecnología para lograr soluciones con impacto industrial y ambiental.</p>
+      <a href="#proyectos" class="boton-transparente">Ver más →</a>
+    </div>
+  </section>
 
-  <!-- Capa oscura -->
-  <div class="overlay"></div>
-
-  <!-- Contenido textual -->
-  <div class="contenido-texto">
-    <h1>Proyectos Relevantes</h1>
-    <p>
-      Desde la destilación sostenible de aceites esenciales hasta sistemas de control PID en plantas piloto, NovaReact lleva la ingeniería química a otro nivel. Aplicamos ciencia, creatividad y tecnología para lograr soluciones con impacto industrial y ambiental.
-    </p>
-    <a href="pages/projects.html" class="boton-transparente">
-      Ver más →
-    </a>
-  </div>
-</section>
-
-    <!-- Sección de Contacto -->
-<section class="bg-gray-800 text-white py-12" style="background-color: black;">
+<section class="bg-gray-800 text-white py-12" style="background-color: black;" id="contacto">
     <div class="container mx-auto px-4">
       <div class="max-w-lg ml-auto">
         <h2 class="text-3xl font-semibold mb-6">Contáctanos</h2>
@@ -187,5 +153,36 @@
     </p>
   </footer>
 
+    <div class="youtube-esquina-izq">
+      <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/wTlof6LGLTo?si=cQsEVICnZFB7SpXD" title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen></iframe>
+    </div>
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Carousel functionality
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }, 5000);
+  </script>
 </body>
 </html>
